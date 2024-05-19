@@ -61,10 +61,6 @@ export const BestSelling = () => {
         transition: 'transform 0.5s ease',
       };
     
-      const cardHoverEffectStyle = {
-        transform: 'scale(1.05)',
-      };
-  
       return (
         <div className="container my-5">
           <div className="d-flex justify-content-between align-items-center mb-3">
@@ -80,12 +76,12 @@ export const BestSelling = () => {
                       <div className="col-12 col-md-6 col-lg-3 mb-4" key={idx}>
                         <a href='#'className="link-offset-2 link-underline link-underline-opacity-0">
                         <div className="card h-100" style={cardHoverStyle}>
-                          <img src={book.imgSrc} className="card-img-top" alt={book.title} />
+                          <img src={book.imgSrc} className="card-img-top" alt={book.title}  style={{ height: '250px', objectFit: 'cover' }}  />
                           <div className="card-body">
-                            <p className="card-text text-danger">{book.formats}</p>
-                            <h5 className="card-title">{book.title}</h5>
-                            <p className="card-text text-muted">{book.authors}</p>
-                            <p className="card-text">{book.price}</p>
+                            <p className="card-text text-danger" style={{ fontSize: '12px' }}>{book.formats}</p>
+                            <h5 className="card-title" style={{ fontSize: '14px', height: '40px' }}>{book.title}</h5>
+                            <p className="card-text text-muted"style={{ fontSize: '12px' }}>{book.authors}</p>
+                            <p className="card-text"style={{ fontSize: '12px' }}>{book.price}</p>
                           </div>
                         </div>
                         </a>

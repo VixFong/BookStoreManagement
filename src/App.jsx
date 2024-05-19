@@ -5,6 +5,7 @@ import { BestSelling } from './Component/BestSelling'
 import { FeaturedBook } from './Component/FeaturedBook'
 import { DealOfTheWeek } from './Component/DealOfTheWeek'
 import { NewReleases } from './Component/NewReleases'
+import { FavoriteAuthors } from './Component/FavoriteAuthors'
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
       <FeaturedBook/>
       <DealOfTheWeek/>
       <NewReleases/>
+      <FavoriteAuthors/>
     </div>
   )
 }
