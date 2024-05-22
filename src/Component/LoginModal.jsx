@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const LoginModal = ({ show, handleClose }) => {
     const modalRef = useRef();
@@ -73,7 +74,7 @@ export const LoginModal = ({ show, handleClose }) => {
                     </Form.Group>
                     <div className="d-flex justify-content-between mb-3">
                         <Button variant="link" className="p-0">Forgot Password?</Button>
-                        <Button variant="link" className="p-0">Register</Button>
+                        <Button variant="link" className="p-0"><Link to="/registerd">Register</Link></Button>
                     </div>
                     <Button variant="dark" type="submit" className="w-100">Sign In</Button>
                 </Form>
